@@ -8,6 +8,6 @@ additionalProperties:
   # template directory is responsible for emitting cyper/compio code.
   library: reqwest
   packageName: labrinth
-  packageVersion: 0.1.0
+  packageVersion: 0.1.1
   packageDescription: Generated Rust client for the Labrinth API
   clientNamePrefix: Labrinth

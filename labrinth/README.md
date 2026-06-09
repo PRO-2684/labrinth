@@ -8,7 +8,7 @@ This crate is generated from OpenAPI specification, providing a [`cyper`](https:
 
 - Spec title: Labrinth
 - API version: v2.7.0/366f528
-- Package version: 0.1.0
+- Package version: 0.1.1
 - Generator version: 7.22.0
 
 To get started, import [`labrinth::LabrinthClient`]. Documentation available at [docs.rs/labrinth](https://docs.rs/labrinth). Original OpenAPI description attached below.

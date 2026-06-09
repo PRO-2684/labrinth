@@ -1,6 +1,6 @@
 [package]
 name = "labrinth"
-version = "0.1.0"
+version = "0.1.1"
 description = "Generated Rust client for the Labrinth API"
 edition = "2024"
 repository = "https://github.com/PRO-2684/labrinth"
