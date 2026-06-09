@@ -1,12 +1,17 @@
-# Rust API client for labrinth
+# `labrinth` - Rust API client for Labrinth
 
-This crate is generated from an OpenAPI specification using the repository's template.
+[![Crates.io Version](https://img.shields.io/crates/v/labrinth?logo=rust)](https://crates.io/crates/labrinth)
+[![Crates.io Total Downloads](https://img.shields.io/crates/d/labrinth?logo=rust)](https://crates.io/crates/labrinth)
+[![docs.rs](https://img.shields.io/docsrs/labrinth?logo=rust)](https://docs.rs/labrinth)
 
+This crate is generated from OpenAPI specification, providing a [`cyper`](https://crates.io/crates/cyper)- and [`compio`](https://crates.io/crates/compio)- based Rust API client for labrinth.
+
+- Spec title: Labrinth
 - API version: v2.7.0/366f528
 - Package version: 0.1.0
 - Generator version: 7.22.0
 
-Original OpenAPI description attached below.
+To get started, import [`labrinth::LabrinthClient`]. Documentation available at [docs.rs/labrinth](https://docs.rs/labrinth). Original OpenAPI description attached below.
 
 This documentation doesn't provide a way to test our API. In order to facilitate testing, we recommend the following tools:
 

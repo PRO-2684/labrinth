@@ -1,3 +1,4 @@
+#![doc = include_str!("../README.md")]
 #![allow(unused_imports)]
 #![allow(non_snake_case)]
 #![allow(
