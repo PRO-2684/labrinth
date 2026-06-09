@@ -4,11 +4,6 @@ set -euo pipefail
 EXPECTED_OPENAPI_GENERATOR_VERSION="7.22.0"
 DOC_PATH="docs/LABRINTH.md"
 
-SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
-
-cd "${REPO_ROOT}"
-
 fail() {
   printf 'error: %s\n' "$*" >&2
   exit 1
@@ -62,5 +57,6 @@ openapi-generator-cli generate \
 remove_generated_paths \
   labrinth/.openapi-generator
 
+cd labrinth
 cargo fmt --all
 cargo check -p labrinth
