@@ -11,7 +11,7 @@ This crate is generated from OpenAPI specification, providing a [`cyper`](https:
 - Package version: 0.1.1
 - Generator version: 7.22.0
 
-To get started, import [`labrinth::LabrinthClient`]. Documentation available at [docs.rs/labrinth](https://docs.rs/labrinth). Original OpenAPI description attached below.
+To get started, import [`LabrinthClient`]. Documentation available at [docs.rs/labrinth](https://docs.rs/labrinth). Original OpenAPI description attached below.
 
 This documentation doesn't provide a way to test our API. In order to facilitate testing, we recommend the following tools:
 
