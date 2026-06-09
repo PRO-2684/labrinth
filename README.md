@@ -3,7 +3,6 @@
 [![GitHub License](https://img.shields.io/github/license/PRO-2684/labrinth?logo=opensourceinitiative)](https://github.com/PRO-2684/labrinth/blob/main/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/PRO-2684/labrinth/release.yml?logo=githubactions)](https://github.com/PRO-2684/labrinth/blob/main/.github/workflows/release.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/PRO-2684/labrinth?logo=githubactions)](https://github.com/PRO-2684/labrinth/releases)
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PRO-2684/labrinth/total?logo=github)](https://github.com/PRO-2684/labrinth/releases)
 [![Crates.io Version](https://img.shields.io/crates/v/labrinth?logo=rust)](https://crates.io/crates/labrinth)
 [![Crates.io Total Downloads](https://img.shields.io/crates/d/labrinth?logo=rust)](https://crates.io/crates/labrinth)
 [![docs.rs](https://img.shields.io/docsrs/labrinth?logo=rust)](https://docs.rs/labrinth)
