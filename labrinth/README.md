@@ -6,12 +6,6 @@ This crate is generated from an OpenAPI specification using the repository's tem
 - Package version: 0.1.0
 - Generator version: 7.22.0
 
-Generate local Rust documentation with:
-
-```bash
-cargo doc --open
-```
-
 Original OpenAPI description attached below.
 
 This documentation doesn't provide a way to test our API. In order to facilitate testing, we recommend the following tools:
