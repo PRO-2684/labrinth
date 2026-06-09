@@ -15,7 +15,6 @@ Generated Rust client for the Labrinth API
 1. [Create a new GitHub repository](https://github.com/new) with the name `labrinth` and push this generated project to it.
 2. Enable Actions for the repository, and grant "Read and write permissions" to the workflow [here](https://github.com/PRO-2684/labrinth/settings/actions).
 3. [Generate an API token on crates.io](https://crates.io/settings/tokens/new), with the following setup:
-
     - `Name`: `labrinth`
     - `Expiration`: `No expiration`
     - `Scopes`: `publish-new`, `publish-update`
@@ -35,24 +34,6 @@ Generated Rust client for the Labrinth API
     2. Un-comment the `trusted-publishing` job.
 3. Remove the `CARGO_TOKEN` [repository secret](https://github.com/PRO-2684/labrinth/settings/secrets/actions).
 4. Revoke the API token on [crates.io](https://crates.io/settings/tokens).
-
-## 📥 Installation
-
-### Using [`binstall`](https://github.com/cargo-bins/cargo-binstall)
-
-```shell
-cargo binstall labrinth
-```
-
-### Downloading from Releases
-
-Navigate to the [Releases page](https://github.com/PRO-2684/labrinth/releases) and download respective binary for your platform. Make sure to give it execute permissions.
-
-### Compiling from Source
-
-```shell
-cargo install labrinth --features=cli
-```
 
 ## 💡 Examples
 

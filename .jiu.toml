@@ -1,18 +1,6 @@
 description = "\u001b[1;36mlabrinth\u001b[22;39m: Generated Rust client for the Labrinth API"
 
 [[recipes]]
-names = ["build", "b"]
-description = "\u001b[4mB\u001b[24muild release binary"
-arguments = []
-command = ["cargo", "build", "--release", "--features=cli"]
-
-[[recipes]]
-names = ["run", "r"]
-description = "Compile and \u001b[4mr\u001b[24mun"
-arguments = ["*rest"]
-command = ["cargo", "run", "--features=cli", "--", ["*rest"]]
-
-[[recipes]]
 names = ["test", "t"]
 description = "Run \u001b[4mt\u001b[24mests"
 arguments = ["*rest"]
