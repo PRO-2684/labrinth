@@ -25,11 +25,12 @@ if git tag | grep -q "v$version"; then
     echo "Error: Version $version already exists"
     exit 1
 fi
-# Set version in Cargo.toml
-sed -i "s/^version = \".*\"/version = \"$version\"/" Cargo.toml
-cargo update
-# Commit the changes
-git add Cargo.toml Cargo.lock
-git commit -S -m "Bump version to v$version"
+# Check if the version matches Cargo.toml (version = "...")
+if ! grep -q "version = \"$version\"" labrinth/Cargo.toml; then
+    echo "Error: Version $version does not match Cargo.toml"
+    echo "Consider updating openapi-generator.yml and regenerating first"
+    echo "See docs/DEV-NOTES.md for more information"
+    exit 1
+fi
 # Create a new tag
 git tag -s v$version -m "Version $version"
