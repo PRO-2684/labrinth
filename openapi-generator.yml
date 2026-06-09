@@ -1,0 +1,13 @@
+generatorName: rust
+inputSpec: labrinth.yaml
+outputDir: labrinth
+templateDir: template
+
+additionalProperties:
+  # Compatibility selector for the stock Rust generator. The repository-owned
+  # template directory is responsible for emitting cyper/compio code.
+  library: reqwest
+  packageName: labrinth
+  packageVersion: 0.1.0
+  packageDescription: Generated Rust client for the Labrinth API
+  clientNamePrefix: Labrinth

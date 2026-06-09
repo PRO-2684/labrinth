@@ -1,0 +1,49 @@
+#![allow(unused_imports)]
+#![allow(non_snake_case)]
+#![allow(
+    clippy::derivable_impls,
+    clippy::empty_docs,
+    clippy::needless_return,
+    clippy::too_many_arguments
+)]
+
+pub mod apis;
+pub mod models;
+
+#[derive(Debug, Clone)]
+pub struct {{#clientNamePrefix}}{{{clientNamePrefix}}}{{/clientNamePrefix}}Client {
+    pub base_path: String,
+    pub http: cyper::Client,
+    pub basic_auth: Option<BasicAuth>,
+    pub oauth_access_token: Option<String>,
+    pub bearer_access_token: Option<String>,
+    pub api_key: Option<ApiKey>,
+}
+
+pub type BasicAuth = (String, Option<String>);
+
+#[derive(Debug, Clone)]
+pub struct ApiKey {
+    pub prefix: Option<String>,
+    pub key: String,
+}
+
+impl {{#clientNamePrefix}}{{{clientNamePrefix}}}{{/clientNamePrefix}}Client {
+    pub fn new(user_agent: impl Into<String>) -> Result<Self, cyper::Error> {
+        let user_agent = http::HeaderValue::try_from(user_agent.into())
+            .map_err(|error| cyper::Error::Http(error.into()))?;
+        let mut headers = http::HeaderMap::new();
+        headers.insert(http::header::USER_AGENT, user_agent);
+
+        Ok(Self {
+            base_path: "{{{basePath}}}".to_owned(),
+            http: cyper::Client::builder()
+                .default_headers(headers)
+                .build()?,
+            basic_auth: None,
+            oauth_access_token: None,
+            bearer_access_token: None,
+            api_key: None,
+        })
+    }
+}

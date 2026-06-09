@@ -1,13 +1,13 @@
 description = "\u001b[1;36mlabrinth\u001b[22;39m: Generated Rust client for the Labrinth API"
 
 [[recipes]]
-names = ["test", "t"]
-description = "Run \u001b[4mt\u001b[24mests"
-arguments = ["*rest"]
-command = ["cargo", "test", ["*rest"]]
-
-[[recipes]]
 names = ["version", "v"]
 description = "Set or get \u001b[4mv\u001b[24mersion"
 arguments = ["?version"]
 command = ["./scripts/version.sh", ["?version"]]
+
+[[recipes]]
+names = ["generate", "g"]
+description = "\u001b[4mG\u001b[24menerate labrinth crate from template"
+arguments = []
+command = ["./scripts/generate-labrinth.sh"]
